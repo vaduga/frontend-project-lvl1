@@ -1,0 +1,12 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:vaduga/frontend-project-lvl1.git",
+  "author": "vaduga <arbitr38@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
