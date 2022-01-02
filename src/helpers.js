@@ -5,3 +5,22 @@ export function isEven(number) {
 export function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max)) + 1;
 }
+
+export function calculate(left, right) {
+  const operators = '+-*/';
+  const operatorIndex = getRandomInt(3) - 1;
+  const randOp = operators[operatorIndex];
+
+  switch (randOp) {
+    case '+':
+      return [left + right, randOp];
+    case '-':
+      return [left - right, randOp];
+    case '*':
+      return [left * right, randOp];
+    case '/':
+      return [left / right, randOp];
+    default:
+      return [left + right, randOp];
+  }
+}
