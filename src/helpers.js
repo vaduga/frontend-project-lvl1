@@ -24,3 +24,9 @@ export function calculate(left, right) {
       return [left + right, randOp];
   }
 }
+
+export function gcd(first, second) {
+  if (second > first) return gcd(second, first);
+  if (!second) return first;
+  return gcd(second, first % second);
+}
