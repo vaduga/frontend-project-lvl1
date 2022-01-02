@@ -5,4 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: cd ../ && make lint
+        run: |
+        cd $GITHUB_WORKSPACE
+        npm ci
+        make lint
