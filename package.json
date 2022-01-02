@@ -7,7 +7,12 @@
   "author": "vaduga <arbitr38@gmail.com>",
   "license": "MIT",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-prime": "bin/brain-prime.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
