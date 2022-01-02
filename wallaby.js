@@ -9,7 +9,7 @@ export default function () {
     testFramework: {
       // the path to locate jest
       // (relative to project root)
-      path: "/home/vaduga/.nvm/versions/node/v14.16.1/lib",
+      path: "/home/vaduga/.nvm/versions/node/v16.13.1/lib",
     },
   };
 }
