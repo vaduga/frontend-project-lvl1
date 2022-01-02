@@ -28,5 +28,5 @@ jobs:
       - name: Makefile run lint
         run: |
           cd $GITHUB_WORKSPACE
-          npm ci
+          yarn install --immutable --immutable-cache --check-cache
           make lint
