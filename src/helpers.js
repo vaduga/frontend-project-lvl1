@@ -30,3 +30,5 @@ export function gcd(first, second) {
   if (!second) return first;
   return gcd(second, first % second);
 }
+
+export function getRandomProgression() {}

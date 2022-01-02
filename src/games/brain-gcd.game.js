@@ -1,5 +1,5 @@
-import launch from '../launchGame.js';
-//import { gcd, getRandomInt } from '../helpers.js';
+import launch from '../launcher.js';
+// import { gcd, getRandomInt } from '../helpers.js';
 
 export default function brainGCDGame() {
   const taskDescription = 'Greatest common divisor?';
