@@ -2,9 +2,9 @@ export function isEven(number) {
   return number % 2 === 0;
 }
 
-export function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max)) + 1;
-}
+export function isPrime(number) {}
+
+export function getRandomInt(max) {}
 
 export function calculate(left, right) {
   const operators = '+-*/';
@@ -25,10 +25,6 @@ export function calculate(left, right) {
   }
 }
 
-export function gcd(first, second) {
-  if (second > first) return gcd(second, first);
-  if (!second) return first;
-  return gcd(second, first % second);
-}
+export function gcd(first, second) {}
 
 export function getRandomProgression() {}

@@ -3,7 +3,7 @@ import gameLauncher from '../launcher.js';
 import { getRandomInt, isEven } from '../helpers.js';
 
 export default function brainEvenGame() {
-  const taskDescription = 'Is secret number even? yes/no: ';
+  const taskDescription = 'Is number even? yes/no: ';
 
   const getNextNumber = () => {
     const randomNumber = getRandomInt(24);
