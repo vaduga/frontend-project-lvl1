@@ -2,10 +2,17 @@ export function isEven(number) {
   return number % 2 === 0;
 }
 
-export function isPrime(number) {}
+export function isPrime(number) {
+  let div = number - 1;
+  while (div > 1) {
+    if (number % div === 0) return false;
+    div -= 1;
+  }
+  return number > 2;
+}
 
-export function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max)) + 1;
+export function getRandomInt(max, min = 0) {
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 export function calculate(left, right) {
@@ -27,6 +34,25 @@ export function calculate(left, right) {
   }
 }
 
-export function gcd(first, second) {}
+export function gcd(first, second) {
+  let div = first;
+  while (div > 0) {
+    if (first % div === 0 && second % div === 0) return div;
+    div -= 1;
+  }
+  return null;
+}
 
-export function getRandomProgression() {}
+export function getRandomProgression() {
+  const step = getRandomInt(5, 2);
+  const length = getRandomInt(10, 5); //?
+  let start = getRandomInt(100, getRandomInt(50));
+  const progression = [start];
+
+  for (let i = 1; i < length; i++) {
+    start += step;
+    progression.push(start);
+    i++;
+  }
+  return progression;
+}
