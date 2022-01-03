@@ -5,9 +5,9 @@ export default function brainProgressionGame() {
   const taskDescription = 'Missing number in this progression?';
 
   const nextGame = () => {
-    let progression = getRandomProgression();
-    let hide = getRandomInt(progression.length - 1, 0);
-    let answer = progression[hide];
+    const progression = getRandomProgression();
+    const hide = getRandomInt(progression.length - 1, 0);
+    const answer = progression[hide];
     progression[hide] = '..';
     return [progression, answer];
   };
