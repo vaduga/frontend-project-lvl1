@@ -4,7 +4,9 @@ export function isEven(number) {
 
 export function isPrime(number) {}
 
-export function getRandomInt(max) {}
+export function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max)) + 1;
+}
 
 export function calculate(left, right) {
   const operators = '+-*/';
