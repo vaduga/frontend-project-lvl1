@@ -1,4 +1,4 @@
-import AnswerMap from '../const';
+import { AnswerMap } from '../const.js';
 import gameLauncher from '../launcher.js';
 import { getRandomInt, isEven } from '../helpers.js';
 

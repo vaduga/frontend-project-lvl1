@@ -17,7 +17,7 @@ export function getRandomInt(max, min = 0) {
 
 export function calculate(left, right) {
   const operators = '+-*/';
-  const operatorIndex = getRandomInt(3) - 1;
+  const operatorIndex = getRandomInt(4);
   const randOp = operators[operatorIndex];
 
   switch (randOp) {
@@ -47,11 +47,11 @@ export function getRandomProgression() {
   const step = getRandomInt(5, 2);
   const length = getRandomInt(10, 5); //?
   let start = getRandomInt(100, getRandomInt(50));
-  const progression = [start];
+  const progression = [];
 
-  for (let i = 1; i < length; i++) {
-    start += step;
+  for (let i = 0; i <= length; i++) {
     progression.push(start);
+    start += step;
     i++;
   }
   return progression;
