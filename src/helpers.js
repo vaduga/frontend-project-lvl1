@@ -45,14 +45,14 @@ export function gcd(first, second) {
 
 export function getRandomProgression() {
   const step = getRandomInt(5, 2);
-  const length = getRandomInt(10, 5); //?
+  const length = getRandomInt(10, 5);
   let start = getRandomInt(100, getRandomInt(50));
   const progression = [];
 
-  for (let i = 0; i <= length; i++) {
+  for (let i = 0; i <= length; i += 1) {
     progression.push(start);
     start += step;
-    i++;
+    i += 1;
   }
   return progression;
 }

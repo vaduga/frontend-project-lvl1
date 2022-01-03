@@ -12,5 +12,3 @@ export default function brainGCDGame() {
 
   launch(taskDescription, nextGame);
 }
-
-gcd(25, 50); //?
