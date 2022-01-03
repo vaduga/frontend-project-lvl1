@@ -26,5 +26,5 @@ export default function gameLauncher(
     }
   }
 
-  console.log('You won 3 rounds in a row! Congrats');
+  console.log(`Congratulations, ${userName}!`);
 }

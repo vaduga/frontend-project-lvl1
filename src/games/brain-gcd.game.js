@@ -7,7 +7,7 @@ export default function brainGCDGame() {
   const nextGame = () => {
     const first = getRandomInt(50);
     const second = getRandomInt(50);
-    return [`gcd of ${first} and ${second}?`, gcd(25, 50)];
+    return [`gcd of ${first} and ${second}?`, gcd(first, second)];
   };
 
   launch(taskDescription, nextGame);
