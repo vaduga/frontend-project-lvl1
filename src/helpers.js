@@ -32,8 +32,6 @@ export function calculate(left, right) {
   }
 }
 
-
-
 export function gcd(first, second) {
   let div = first;
   while (div > 0) {
