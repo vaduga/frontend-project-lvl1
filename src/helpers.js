@@ -16,7 +16,7 @@ export function getRandomInt(max, min = 0) {
 }
 
 export function calculate(left, right) {
-  const operators = '+-*/';
+  const operators = '+-*';
   const operatorIndex = getRandomInt(4);
   const randOp = operators[operatorIndex];
 
