@@ -9,7 +9,7 @@ export default function brainProgressionGame() {
     const hide = getRandomInt(progression.length - 1, 0);
     const answer = progression[hide];
     progression[hide] = '..';
-    return [progression, answer];
+    return [progression.join(' '), answer];
   };
 
   launch(taskDescription, nextGame);
