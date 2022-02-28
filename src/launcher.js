@@ -9,21 +9,22 @@ export default function gameLauncher(
 
   const userName = greet();
   console.log(taskDescription);
-
+let rights = 0
   while (round < ROUNDS) {
     const [question, correctAnswer] = nextGame();
     const userAnswer = ask(`Question: ${question} `);
 
     if (correctAnswer.toString() === userAnswer.toString()) {
       console.log('Correct!');
-      round += 1;
+
     } else {
       console.log(`
       ${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
       Let's try again, ${userName}!
               `);
-      round = 0;
+      return
     }
+    round += 1;
   }
 
   console.log(`Congratulations, ${userName}!`);
