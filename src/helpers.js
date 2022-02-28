@@ -27,8 +27,6 @@ export function calculate(left, right) {
       return [left - right, randOp];
     case '*':
       return [left * right, randOp];
-    case '/':
-      return [left / right, randOp];
     default:
       return [left + right, randOp];
   }
