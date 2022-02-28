@@ -9,7 +9,8 @@ export default function gameLauncher(
 
   const userName = greet();
   console.log(taskDescription);
-  while (round < ROUNDS) {
+
+ for (let i = 0; i < ROUNDS; i++)  {
     const [question, correctAnswer] = nextGame();
     const userAnswer = ask(`Question: ${question} `);
 
@@ -22,7 +23,6 @@ export default function gameLauncher(
               `);
       return;
     }
-    round += 1;
   }
 
   console.log(`Congratulations, ${userName}!`);
