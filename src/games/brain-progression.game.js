@@ -8,7 +8,7 @@ export default function brainProgressionGame() {
     const progression = getRandomProgression();
     const hide = getRandomInt(progression.length - 1, 0);
     const answer = progression[hide];
-    progression[hide] = '..';
+    progression.splice(hide, 1);
     return [progression.join(' '), answer];
   };
 
