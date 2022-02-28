@@ -43,7 +43,7 @@ export function gcd(first, second) {
 
 export function getRandomProgression() {
   const step = getRandomInt(5, 2);
-  const length = getRandomInt(10, 5);
+  const length = getRandomInt(30, 5);
   let start = getRandomInt(100, getRandomInt(50));
   const progression = [];
 
