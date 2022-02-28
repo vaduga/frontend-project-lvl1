@@ -5,12 +5,10 @@ export default function gameLauncher(
   taskDescription = '',
   nextGame = () => null,
 ) {
-  let round = 0;
-
   const userName = greet();
   console.log(taskDescription);
 
- for (let i = 0; i < ROUNDS; i++)  {
+  for (let i = 0; i < ROUNDS; i += 1) {
     const [question, correctAnswer] = nextGame();
     const userAnswer = ask(`Question: ${question} `);
 
